@@ -8,8 +8,12 @@
 ## Description
 
 This project implements a Spring application for storing Gomoku games and players.
+
 The implementation was inspired/based on Centric's presentation by Florin Olariu [https://www.youtube.com/watch?v=xGrzlvFuq3Y](https://www.youtube.com/watch?v=xGrzlvFuq3Y)
+
 It uses a Model - Repository - Service - Controller design pattern. I also attached the package for exception handling. The server application from the previous lab calles the create method from controller when a winner is determinated.
+
+Also, for the security part I followed the tutorial series starting from here https://www.youtube.com/watch?v=oVpFJr-Z35A . The code does not belong to me except that i adapted it to use my API. 
 
 ## Features
 
