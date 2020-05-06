@@ -1,0 +1,96 @@
+swagger: "2.0"
+info:
+  description: "In this application are implemented services responsible for storing Gomoku games and players"
+  version: "1.0.0"
+  title: "Gomoku Application"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "cojocariualexandru1@gmail.com"
+
+schemes:
+- "http"
+
+paths:
+  /api/games:
+    post:
+      tags:
+      - "Games"
+      summary: "Add a Gomoku game to the database"
+      description: ""
+      parameters:
+        - in: "body"
+          name: "Game"
+          description: "Game model object which contains board state, players and the winner"
+      responses:
+        "201":
+          description: "The Gomoku game was successfully added to the database"
+          
+    put:
+      tags:
+      - "Games"
+      summary: "Update a Gomoku game in the database."
+      description: ""
+      parameters:
+        - in: "body"
+          name: "Game"
+          description: "Game model object which contains board state, players and the winner"
+      responses:
+        "201":
+          description: "The Gomoku game was successfully updated in the database"
+    get:
+      tags:
+        - "Games"
+      summary: "Get an array of Gomoku games from the database"
+      description: ""
+      parameters:
+        - in: "body"
+          name: "Game"
+          description: "Game model object which contains board state, players and the winner"
+      responses:
+        "200":
+          description: "The Gomoku game list was successfully returned"
+          
+          
+  /api/players:
+    post:
+      tags:
+      - "Players"
+      summary: "Add a Gomoku game to the database"
+      description: ""
+      parameters:
+        - in: "body"
+          name: "Player"
+          description: "Player model object which contains information about that player"
+      responses:
+        "201":
+          description: "The Gomoku player was successfully added to the database"
+          
+    put:
+      tags:
+      - "Players"
+      summary: "Update a Gomoku game in the database."
+      description: ""
+      parameters:
+        - in: "body"
+          name: "Player"
+          description: "Player model object which contains information about that player"
+      responses:
+        "201":
+          description: "The Gomoku player was successfully updated in the database"
+    get:
+      tags:
+        - "Players"
+      summary: "Get an array of Gomoku games from the database"
+      description: ""
+      parameters:
+        - in: "body"
+          name: "Player"
+          description: "Player model object which contains information about that player"
+      responses:
+        "200":
+          description: "The Gomoku player list was successfully returned"
+          
+    
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
