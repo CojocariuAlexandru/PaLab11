@@ -24,6 +24,7 @@ Also, for the security part I followed the tutorial series starting from here ht
   - (Optional) The package exceptionManager makes use of RestControllerAdvice in order to treat runtime exception
   - (Optional) The reading and insertion of games is covered in the game service
   - (Bonus) I tried to use Swagger for documentation, but I ran into problems so I tried to manually edit a .yaml file which is attached
+  - (Bonus) JWT authentication implemented
   
 ## Not resolved
 
