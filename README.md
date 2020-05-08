@@ -28,4 +28,5 @@ Also, for the security part I followed the tutorial series starting from here ht
   
 ## Not resolved
 
+  - (Bonus) AI for the game
   
